@@ -31,6 +31,8 @@ public class SubmissionService {
     }
 
 
+
+
     public List<Submission> getSubmissionsByCompetitionName(String competitionName){
         return submissionsRepository.findByCompetitionName(competitionName);
     }
