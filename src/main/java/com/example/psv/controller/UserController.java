@@ -21,7 +21,7 @@ public class UserController {
     public ResponseEntity<User> addUser(@RequestBody User user) {
         return ResponseEntity.ok().body( userService.saveUser(user));
     }
-   @GetMapping("/userName/{username}")
+   @GetMapping("/username/{username}")
     public ResponseEntity <User> findUserByUsername(@PathVariable("username") String username) {
         return ResponseEntity.ok().body(userService.getUserByUsername(username).orElse(null));
     }
